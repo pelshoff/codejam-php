@@ -51,7 +51,7 @@ EOT;
 		);
 		$expected = array(4, 5);
 		$creditCalculator = new StoreCreditCalculator();
-		$this->assertEquals($expected, $creditCalculator->storeCredit($input['credit'], 2, $input['availableItems']));
+		$this->assertEquals($expected, $creditCalculator->calculateSingleStoreCredit($input['credit'], 2, $input['availableItems']));
 	}
 
 	public function testCalculateStoreCredit()
